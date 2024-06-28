@@ -1,0 +1,169 @@
+Microsoft Windows [Versión 10.0.22631.3737]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\combi>cd..
+
+C:\Users>cd..
+
+C:\>cd program files
+
+C:\Program Files>cd postgres
+El sistema no puede encontrar la ruta especificada.
+
+C:\Program Files>cd postgresql
+
+C:\Program Files\PostgreSQL>cd 16
+
+C:\Program Files\PostgreSQL\16>cd bin
+
+C:\Program Files\PostgreSQL\16\bin>psql -U postgres -d cita -f "C:\bd\cita.sql.txt"
+Contraseña para usuario postgres:
+
+psql: error: C:/bd/cita.sql.txt: No such file or directory
+
+C:\Program Files\PostgreSQL\16\bin>cd C:/db/
+El sistema no puede encontrar la ruta especificada.
+
+C:\Program Files\PostgreSQL\16\bin>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: AC74-5587
+
+ Directorio de C:\Program Files\PostgreSQL\16\bin
+
+17/06/2024  11:08 a. m.    <DIR>          .
+17/06/2024  11:10 a. m.    <DIR>          ..
+26/09/2023  05:29 a. m.            30,720 boost_chrono-vc141-mt-x64-1_66.dll
+26/09/2023  05:29 a. m.           132,096 boost_filesystem-vc141-mt-x64-1_66.dll
+26/09/2023  05:29 a. m.            24,064 boost_system-vc141-mt-x64-1_66.dll
+26/09/2023  05:29 a. m.           113,664 boost_thread-vc141-mt-x64-1_66.dll
+06/06/2024  04:56 a. m.           112,640 clusterdb.exe
+06/06/2024  04:56 a. m.           112,128 createdb.exe
+06/06/2024  04:56 a. m.           115,712 createuser.exe
+06/06/2024  04:56 a. m.           109,056 dropdb.exe
+06/06/2024  04:56 a. m.           108,544 dropuser.exe
+06/06/2024  04:56 a. m.           944,640 ecpg.exe
+06/06/2024  04:56 a. m.        28,399,104 icudt67.dll
+06/06/2024  04:56 a. m.         2,686,976 icuin67.dll
+06/06/2024  04:56 a. m.            61,440 icuio67.dll
+06/06/2024  04:56 a. m.           221,184 icutu67.dll
+06/06/2024  04:56 a. m.         1,934,336 icuuc67.dll
+06/06/2024  04:56 a. m.           207,872 initdb.exe
+06/06/2024  04:56 a. m.            77,824 isolationtester.exe
+06/06/2024  04:56 a. m.         4,582,912 libcrypto-3-x64.dll
+06/06/2024  04:56 a. m.           563,200 libcurl.dll
+06/06/2024  04:56 a. m.            20,878 libcurl.lib
+06/06/2024  04:56 a. m.            96,768 libecpg.dll
+06/06/2024  04:56 a. m.            38,400 libecpg_compat.dll
+06/06/2024  04:56 a. m.         1,851,113 libiconv-2.dll
+06/06/2024  04:56 a. m.           475,769 libintl-9.dll
+06/06/2024  04:56 a. m.           118,784 liblz4.dll
+06/06/2024  04:56 a. m.            80,896 libpgtypes.dll
+06/06/2024  04:56 a. m.           327,168 libpq.dll
+06/06/2024  04:56 a. m.            86,528 libpq_pipeline.exe
+06/06/2024  04:56 a. m.            50,688 libpq_testclient.exe
+06/06/2024  04:56 a. m.            51,200 libpq_uri_regress.exe
+06/06/2024  04:56 a. m.           774,656 libssl-3-x64.dll
+06/06/2024  04:56 a. m.            52,736 libwinpthread-1.dll
+06/06/2024  04:56 a. m.         2,201,088 libxml2.dll
+06/06/2024  04:56 a. m.           408,576 libxslt.dll
+06/06/2024  04:56 a. m.           726,016 libzstd.dll
+06/06/2024  04:56 a. m.            79,872 oid2name.exe
+26/09/2023  05:29 a. m.            31,232 pgaevent.dll
+26/09/2023  05:29 a. m.           251,392 pgagent.exe
+06/06/2024  04:56 a. m.           222,720 pgbench.exe
+06/06/2024  04:56 a. m.           138,752 pg_amcheck.exe
+06/06/2024  04:56 a. m.            84,992 pg_archivecleanup.exe
+06/06/2024  04:56 a. m.           194,048 pg_basebackup.exe
+06/06/2024  04:56 a. m.           121,344 pg_checksums.exe
+06/06/2024  04:56 a. m.            82,432 pg_config.exe
+06/06/2024  04:56 a. m.            98,304 pg_controldata.exe
+06/06/2024  04:56 a. m.           122,368 pg_ctl.exe
+06/06/2024  04:56 a. m.           476,672 pg_dump.exe
+06/06/2024  04:56 a. m.           166,400 pg_dumpall.exe
+06/06/2024  04:56 a. m.           136,192 pg_isolation_regress.exe
+06/06/2024  04:56 a. m.           107,520 pg_isready.exe
+06/06/2024  04:56 a. m.           145,920 pg_receivewal.exe
+06/06/2024  04:56 a. m.           144,896 pg_recvlogical.exe
+06/06/2024  04:56 a. m.           135,680 pg_regress.exe
+06/06/2024  04:56 a. m.           137,216 pg_regress_ecpg.exe
+06/06/2024  04:56 a. m.           111,104 pg_resetwal.exe
+06/06/2024  04:56 a. m.           257,024 pg_restore.exe
+06/06/2024  04:56 a. m.           190,464 pg_rewind.exe
+06/06/2024  04:56 a. m.            90,624 pg_test_fsync.exe
+06/06/2024  04:56 a. m.            80,384 pg_test_timing.exe
+06/06/2024  04:56 a. m.           204,288 pg_upgrade.exe
+06/06/2024  04:56 a. m.           136,192 pg_verifybackup.exe
+06/06/2024  04:56 a. m.           153,088 pg_waldump.exe
+06/06/2024  04:56 a. m.         8,417,792 postgres.exe
+06/06/2024  04:56 a. m.           596,480 psql.exe
+06/06/2024  04:56 a. m.           119,808 reindexdb.exe
+06/06/2024  04:56 a. m.           432,496 stackbuilder.exe
+06/06/2024  04:56 a. m.           125,952 vacuumdb.exe
+06/06/2024  04:56 a. m.            78,848 vacuumlo.exe
+06/06/2024  04:56 a. m.           539,136 wxbase32ud_net_vc_custom.dll
+06/06/2024  04:56 a. m.         3,012,608 wxbase32u_vc_custom.dll
+06/06/2024  04:56 a. m.           186,880 wxbase32u_xml_vc_custom.dll
+06/06/2024  04:56 a. m.         1,213,440 wxmsw32ud_aui_vc_custom.dll
+06/06/2024  04:56 a. m.         1,328,640 wxmsw32ud_html_vc_custom.dll
+06/06/2024  04:56 a. m.         1,537,024 wxmsw32ud_xrc_vc_custom.dll
+06/06/2024  04:56 a. m.            10,752 wxmsw32u_adv_vc_custom.dll
+06/06/2024  04:56 a. m.         8,779,264 wxmsw32u_core_vc_custom.dll
+06/06/2024  04:56 a. m.           100,352 zic.exe
+06/06/2024  04:56 a. m.            89,600 zlib1.dll
+              78 archivos     78,569,568 bytes
+               2 dirs  49,565,315,072 bytes libres
+
+C:\Program Files\PostgreSQL\16\bin>psql -U postgres -d cita -f "C:\bd\Cita2.00.sql.txt"
+Contraseña para usuario postgres:
+
+SET
+SET
+SET
+SET
+SET
+ set_config
+------------
+
+(1 fila)
+
+
+SET
+SET
+SET
+SET
+psql:C:/bd/Cita2.00.sql.txt:26: ERROR:  ya existe el esquema Â«publicÂ»
+ALTER SCHEMA
+COMMENT
+SET
+SET
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER SEQUENCE
+ALTER SEQUENCE
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER SEQUENCE
+ALTER SEQUENCE
+ALTER TABLE
+ALTER TABLE
+COPY 1000
+COPY 1000
+ setval
+--------
+   1000
+(1 fila)
+
+
+ setval
+--------
+   1000
+(1 fila)
+
+
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+
+C:\Program Files\PostgreSQL\16\bin>

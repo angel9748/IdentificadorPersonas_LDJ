@@ -1,0 +1,67 @@
+Server [localhost]: localhost
+Database [postgres]: postgres
+Port [5432]: 5432
+Username [postgres]: postgres
+Contraseña para usuario postgres:
+
+psql (16.3)
+ADVERTENCIA: El código de página de la consola (850) difiere del código
+            de página de Windows (1252).
+            Los caracteres de 8 bits pueden funcionar incorrectamente.
+            Vea la página de referencia de psql «Notes for Windows users»
+            para obtener más detalles.
+Digite «help» para obtener ayuda.
+
+postgres=# CREATE ROLE superadmin_jordan LOGIN PASSWORD 'thebeatles' SUPERUSER;
+CREATE ROLE
+postgres=# CREATE ROLE erick LOGIN PASSWORD 'erick' CREATEDB;
+CREATE ROLE
+postgres=# CREATE ROLE simpleuser LOGIN PASSWORD 'simpleuser';
+CREATE ROLE
+postgres=# ALTER ROLE erick CREATEROLE;
+ALTER ROLE
+postgres=# SET ROLE erick;
+SET
+postgres=> CREATE DATABASE prueba;
+CREATE DATABASE
+postgres=> \
+orden \ no válida
+Digite \? para obtener ayuda.
+postgres=> SET ROLE postgres;
+SET
+postgres=# SET ROLE simpleuser;
+SET
+postgres=> CREATE DATABASE fallo;
+ERROR:  se ha denegado el permiso para crear la base de datos
+postgres=> SET ROLE postgres;
+SET
+postgres=# \l
+                                                                        Listado de base de datos
+      Nombre       |  Due±o   | Codificaci¾n | Proveedor de locale |       Collate       |        Ctype        | configuraci¾n ICU | Reglas ICU: |      Privilegios
+-------------------+----------+--------------+---------------------+---------------------+---------------------+-------------------+-------------+-----------------------
+ ConsultaDatos_LDJ | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             |
+ curso             | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             |
+ postgres          | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             |
+ prueba            | erick    | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             |
+ template0         | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             | =c/postgres          +
+                   |          |              |                     |                     |                     |                   |             | postgres=CTc/postgres
+ template1         | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             | =c/postgres          +
+                   |          |              |                     |                     |                     |                   |             | postgres=CTc/postgres
+ world             | postgres | UTF8         | libc                | Spanish_Mexico.1252 | Spanish_Mexico.1252 |                   |             |
+(7 filas)
+
+
+postgres=#
+postgres=# GRANT superadmin_jordan TO simpleuser;
+GRANT ROLE
+postgres=# \du
+                                 Lista de roles
+   Nombre de rol   |                         Atributos
+-------------------+------------------------------------------------------------
+ erick             | Crear rol, Crear BD
+ postgres          | Superusuario, Crear rol, Crear BD, Replicaci¾n, Ignora RLS
+ simpleuser        |
+ superadmin_jordan | Superusuario
+
+
+postgres=#
